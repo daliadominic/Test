@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CDI web design</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" /> >
+    <link rel="stylesheet" type="text/css" href="style.css" /> >
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="mainpic">
+            <h1>Digital <span class="lightblue">Innovation</span></h1>
+            <h2>A website by CDI</h2>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li class="menuitem"><a href="home.html">Home</a></li>
+                <li class="menuitem"><a href="about.html">About</a></li>
+                <li class="menuitem"><a href="index.html">Add Employees</a></li>
+                <li class="menuitem"><a href="update.html">Update Employee</a></li>
+                <li class="menuitem"><a href="view,html">View Employees</a></li>
+                <li class="menuitem"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <table>
+                <tr>
+                    <td>
+
+                        <form name="RegForm" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <div>
+                                <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                                <input type="text" name="fullname" id="fullname">
+                            </div>
+                            <div>
+                                <label>EMP Code</label>
+                                <input type="text" name="empcode" id="empcode">
+                            </div>
+                            <div>
+                                <label>Email</label>
+                                <input type="text" name="email" id="email">
+                            </div>
+                            <div>
+                                <label>Phone</label>
+                                <input type="text" name="phone" id="phone">
+                            </div>
+                            <div>
+                                <label>Salary</label>
+                                <input type="text" name="salary" id="salary">
+                            </div>
+                            <div>
+                                <label>City</label>
+                                <input type="text" name="city" id="city">
+                            </div>
+                            <div class="form-action-buttons">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="employeeList">
+                            <thead>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>EMP Code</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Salary</th>
+                                    <th>City</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <script src="scriptnew.js"></script>
+        </div>
+
+    </div>
+</body>
+
+</html>
